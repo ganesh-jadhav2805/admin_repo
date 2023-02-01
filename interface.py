@@ -6,10 +6,10 @@ import config
 import numpy as np
 
 
-with open(Linear Model.pkl', 'rb') as f:
+with open('Linear Model.pkl', 'rb') as f:
     model = pickle.load(f)
         
-with open(Project Data.json', 'r') as f:
+with open('Project Data.json', 'r') as f:
     json_data = json.load(f)
 
 app = Flask(__name__)
