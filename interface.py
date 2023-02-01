@@ -45,7 +45,7 @@ def abc():
 
     print('Test Array :', test_array)
     result = model.predict([test_array])[0]
-    return jsonify({'result': f"Chances of getting admission : {result*100 }"},'%')
+    return f{"Chances of getting admission : {np.around(result*100)}{%}"}
 
 if __name__ =='__main__':
     app.run(host='0.0.0.0',port =9000)
